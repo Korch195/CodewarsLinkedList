@@ -5,6 +5,8 @@ class Node(object):
         self.next = next
     
 def get_nth(node, index):
+    if node is None:
+        raise ValueError
     current = node
     count = 0
     while current:
