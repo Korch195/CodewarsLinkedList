@@ -9,6 +9,8 @@ class Context(object):
         self.second = second
     
 def alternating_split(head):
+    if head is None or head.next is None:
+        raise ValueError
     first_head = head
     second_head = head.next
     first_current = first_head
