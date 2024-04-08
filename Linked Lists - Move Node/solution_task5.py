@@ -15,6 +15,7 @@ def move_node(source, dest):
     source = source.next
     if dest is None:
         dest = node_to_move
+        dest.next= None
     else:
         node_to_move.next = dest
         dest = node_to_move
